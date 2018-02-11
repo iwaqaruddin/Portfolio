@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" style="padding:24px;">
+        <fieldset style="font-size:17px; padding:20px; width:250px; color:grey;">
+            <legend align="center">
+                <img src="saylani.jpg" align="top" alt="MainBanner">
+            </legend>
+            <h1 align="center" style="color:black;">Saylani Mass Training & Job Creation Program</h1>
+            <h3 align="center" style="color:black;">Registration / Entry Test Form (Only For Faisalabad Male Candidates)</h3>
+            <label align=left for="Course">
+                <strong>Select Your Course *</strong>
+                <strong style="padding:300px;">Select Batch*</strong>
+                <br>
+                <select name="courselist" id="abc" style=" width:400px; border-top:none; border-left:none; border-right:none; ">
+                    <option selected value="Mobile and Web Development">Mobile and Web Development</option>
+                    <option value="Software Essentials">Software Essentials</option>
+                </select>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <select name="batchlist" id="abc1" style=" width:400px; border-top:none; border-left:none; border-right:none;  ">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option selected value="5">5</option>
+                </select>
+            </label>
+            <br>
+            <label for="name" align="left">
+                <strong>Enter Your Name:</strong>
+                <br>
+                <input type="text" required placeholder="Enter Your Name Here" style=" width:1150px; border-top:none; border-left:none; border-right:none; ">
+            </label>
+            <br>
+            <label for="DOB">
+                <strong>Enter Your Date Of Birth:</strong>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <strong>Age:</strong>
+                <br>
+                <input required type="date" name="DOB" placeholder="DOB" id="DOB"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;
+                <input type="text" placeholder="Calculated Age" disabled>
+            </label>
+            <br>
+            <label for="Gender">
+                <strong>Please select your Gender</strong>
+                <br>
+                <input required type="radio" name="Gen" id="" value="Male" /> Male
+                <input type="radio" required name="Gen" id="" value="Female" />Female
+            </label>
+            <br>
+            <label for="NIC">
+                <strong>Please Put Your CNIC#:</strong>
+                <br>
+                <input required type="number" maxlength="13" placeholder="42101-1234567-8" style=" width:1150px; border-top:none; border-left:none; border-right:none; ">
+            </label>
+            <br>
+            <label for="Fname">
+                <strong>Enter Father's Name:</strong>
+                <br>
+                <input required type="text" maxlength="" placeholder="Father's Name" style=" width:1150px; border-top:none; border-left:none; border-right:none; ">
+
+            </label>
+            <br>
+            <label for="FNIC">
+                <strong>Please Put Your Father's CNIC#:</strong>
+                <br>
+                <input type="number" maxlength="13" placeholder="42101-1234567-8" style=" width:1150px; border-top:none; border-left:none; border-right:none;">
+            </label>
+            <br>
+            <label for="ADDR">
+                <strong>Address:</strong>
+                <br>
+                <input type="text" maxlength="" placeholder="Enter Your Residential Address" style=" width:1150px; border-top:none; border-left:none; border-right:none; ">
+            </label>
+            <br>
+            <label for="MNum">
+                <strong>Please Put Your Mobile#:</strong>
+                <br>
+                <input type="number" required maxlength="11" placeholder="0300-1234567" style=" width:1150px; border-top:none; border-left:none; border-right:none; ">
+            </label>
+            <br>
+            <label for="email">
+                <strong>Please Put Your Email#:</strong>
+                <br>
+                <input type="email" required maxlength="" placeholder="abcd@example.com" style=" width:1150px; border-top:none; border-left:none; border-right:none; ">
+            </label>
+            <br>
+            <label for="Qualification">Last Qualification *
+                <br>
+                <input type="radio" name="Qualification" id="">None
+                <input type="radio" name="Qualification" id="">Matric
+                <input type="radio" name="Qualification" id="">Intermediate
+                <input type="radio" name="Qualification" id="">Bachelor
+                <input type="radio" name="Qualification" id="">Master
+                <input type="radio" name="Qualification" id="">PhD
+            </label>
+            <br>
+            <br>
+            <label for="photo" style="color:black;">Upload your recent image (face front, without glasses and with a single-colored background) *
+                <br>
+                <input type="file" name="photo" id="" />
+                <br> Only png or jpg with size < 1mb is allowed </label>
+                    <br>
+                    <br>
+                    <label for="declaration" style="color:black;">Declaration Undertaking *
+                        <br>
+                        <ol>
+                            <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the
+                                best of my knowledge. Further, I will abide by my all the establish and future regulation
+                                and policies of SWIT</li>
+                            <li>I hereby accept the responsibilites of the good conduct and guarantee that I will not be involved
+                                in any other activity, polical or ethic, but learning during my stay in the program.</li>
+                            <li>Defiance will render my admission cancelled at any point in time.</li>
+                            <li>Upon completion of course, I will complete the required project by SWIT.</li>
+                            <br>
+                            <input type="checkbox" required name="agreement" id=""> I agree with the above terms.
+                        </ol>
+                    </label>
+                    <label for="captcha">
+                        <img src="sketch.png" alt="Captcha" />
+                    </label>
+                    <br>
+                    <label for="submit">
+                        <input type="image" src="capture.png" name="submit" id="">
+                    </label>
+        </fieldset>
+    </form>
+</body>
+
+</html>

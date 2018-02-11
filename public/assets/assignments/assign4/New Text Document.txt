@@ -1,0 +1,9 @@
+Websites for learning:
+freecodecamp.org
+codeacademy.com
+
+
+Visual code, code indenting
+alt+shift+F
+
+

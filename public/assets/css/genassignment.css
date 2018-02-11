@@ -1,0 +1,52 @@
+.top_header
+    {
+        background-color: rgb(185, 215, 241);
+        height: 20px;
+        width: 100%;
+        border-radius:10%;
+        border:2px solid navy;
+    }
+.top_header_left
+    {
+        margin-left: 10%;
+        text-align: left;
+        width: 15%;
+        padding: 0%;
+        position: absolute;
+    }
+.top_header_right
+    {
+        margin-left: 50%;
+        width: 15%;
+        text-align: right;
+        height: 20px;
+        padding: 00%;
+        position: absolute;
+    }
+.top_header_left:hover
+    {
+        color: red;
+        font-size: 18px;
+        font-family: monospace;
+        font-weight: bold;
+        float: none;
+    }
+.top_header_right_link:hover
+    {
+        color: red;
+        font-size: 18px;
+        transition-property: initial;
+        transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+        font-family: monospace;
+        font-weight: bold;
+        float: none;
+    }
+.lower_footer
+    {
+        background-color: rgb(185, 215, 241);
+        height: 20px;
+        width: 100%;
+        border-radius:10%;
+        border:2px solid navy;
+        text-align: center;
+    }
