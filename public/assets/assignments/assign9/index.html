@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/genassignment.css">
+    <style>
+        body {
+            background-image: url('stopwatch-bg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            background-size: auto;
+            background-position: center;
+
+        }
+
+        h1 {
+            display: inline-block;
+            font-size: 4em;
+        }
+
+        button {
+            border-radius: 10px;
+            background-color: azure;
+            font-size: 40pt;
+        }
+
+        .divTimer {
+            margin: 0 auto;
+            width: 50%;
+            height: 100%;
+            background-color: none;
+            font-size: 25pt;
+
+        }
+    </style>
+</head>
+
+<body>
+        <div class="top_header">
+                <span class="top_header_left">
+                    <a class="top_header_left_link" href="https://w-uddin.firebaseapp.com">
+                        <input type="image" src="../../img/assignmenticons/home.png" height="15px" width="15px" name="home" />Go To Homepage
+                    </a>
+                </span>
+                <span class="top_header_right">
+                    <a class="top_header_right_link" href="../assignmentlist.html">
+                        <input type="image" height="15px" width="15px" src="../../img/assignmenticons/back.png" name="back" />Back To List
+                    </a>
+                </span>
+        
+            </div>
+            <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="divTimer" align="center">
+        <h1 id="timer">0:0:0</h1>
+        <br>
+        <button onclick="start()" id="startButton">Start</button>
+        <button onclick="stop()" id="stopButton">Stop</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

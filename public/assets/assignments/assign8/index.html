@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment#5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/genassignment.css">
+    <style type="text/css">
+        table.calc
+        {
+            background:center darkgray scroll;
+            border-radius:  0px 5px 0px 5px;
+            margin-left: auto;
+            
+        }
+        
+        
+        input.calc
+        {
+            width:35px;
+            margin:auto;
+            border-radius: 5px;
+            font-size: 12pt;
+            text-align: center;
+            margin-right: auto;
+        }
+        #screen
+        {
+            border-radius: 5px;
+            size: 10px;
+            background-color:aliceblue;
+            font-size: 18pt;
+        }
+        </style>
+        <!-- Calculator -->
+        <script type="text/javascript">
+        function pushbutton(buttonValue)
+         {
+                  document.getElementById('screen').value += buttonValue;
+             }
+        function calculate(equation)
+        {
+            var answer = eval(equation);
+            document.getElementById('screen').value = answer;	
+        }
+        
+        </script>
+        <!-- Currency Converter -->
+        <script type="text/javascript">
+        var a;
+        a=prompt("How Much You Want To Convert(PKR)","0");
+        function usd(rate)
+        {
+            sum=a*rate;
+            document.getElementById("output").value=sum+"USD";
+        }
+        function eur(rate)
+        {
+            sum=a*rate;
+            document.getElementById("output").value=sum+"Euros";
+        }
+        function aud(rate)
+        {
+            sum=a*rate;
+            document.getElementById("output").value=sum+"AUD";
+        }
+        function cad(rate)
+        {
+            sum=a*rate;
+            document.getElementById("output").value=sum+"CAD";
+        }
+        function inr(rate)
+        {
+            sum=a*rate;
+            document.getElementById("output").value=sum+"INR";
+        }
+        </script>
+</head>
+
+<body>
+    <div class="top_header">
+        <span class="top_header_left">
+            <a class="top_header_left_link" href="https://w-uddin.firebaseapp.com">
+                <input type="image" src="../../img/assignmenticons/home.png" height="15px" width="15px" name="home" />Go To Homepage
+            </a>
+        </span>
+        <span class="top_header_right">
+            <a class="top_header_right_link" href="../assignmentlist.html">
+                <input type="image" height="15px" width="15px" src="../../img/assignmenticons/back.png" name="back" />Back To List
+            </a>
+        </span>
+
+    </div>
+    <hr>
+    <fieldset>
+        <legend>Calculator</legend>
+        <table align="center" class="calc" border="1">
+        <form>
+        <tr>
+        <td colspan="4">
+        <input type="text" id="screen"/><br/>
+        </td>
+        <td>
+        <input type="reset" value="c"/>
+        </td>
+        </tr>
+        </form>
+        <tr>
+        <td>
+        <input class="calc" type="button" value=7 onclick="pushbutton(this.value);"/></td>
+        <td>
+        
+        <input class="calc" type="button" value=8 onclick="pushbutton(this.value);"/></td>
+        <td>
+        
+        <input class="calc" type="button" value=9 onclick="pushbutton(this.value);"/></td>
+        <td>
+        
+        <input class="calc" type="button" value='/' onclick="pushbutton(this.value);"/></td>
+        </tr>
+        <tr>
+        <td>
+        
+        <input class="calc" type="button" value=4 onclick="pushbutton(this.value);"/></td>
+        <td>
+        
+        <input class="calc" type="button" value=5 onclick="pushbutton(this.value);"/></td>
+        <td>
+        
+        <input class="calc" type="button" value=6 onclick="pushbutton(this.value);"/></td>
+        <td>
+        
+        <input class="calc" type="button" value='*' onclick="pushbutton(this.value);"/></td>
+        </tr>
+        <tr>
+        <td>
+        
+        <input class="calc" type="button" value=1 onclick="pushbutton(this.value);"/>
+        </td>
+        <td>
+        
+        <input class="calc" type="button" value=2 onclick="pushbutton(this.value);"/></td>
+        <td>
+        
+        <input class="calc" type="button" value=3 onclick="pushbutton(this.value);"/></td>
+        <td>
+        
+        <input class="calc" type="button" value='-' onclick="pushbutton(this.value);"/></td>
+        </tr>
+        <tr>
+        <td>
+        
+        <input type="button" class="calc" value=0 onclick="pushbutton(this.value);"/></td>
+        <td>
+        
+        <input type="button" value="." class="calc" onclick="pushbutton(this.value);"/></td>
+        <td>
+        
+        <input type="button" value='=' class="calc" onclick="calculate(document.getElementById('screen').value);"/></td>
+        <td>
+        
+        <input class="calc" type="button" value='+' onclick="pushbutton(this.value);"/></td>
+        </tr>
+        
+        </table>
+        </fieldset>
+        
+        <fieldset>
+        <legend><b><h1>Currency Converter</h1></b></legend>
+        
+        <p>To which Currency You Want To Convert:</p>
+        
+        <button type="button" id="usd" value="" onclick="usd(0.01029)">US Dollar</button> 
+        <button type="button" value="" id="eur" onclick="eur(0.00773)">Euro</button>
+        <button type="button" value="" id="aud" onclick="aud(0.00976)">Australian Dollar</button>
+        <button type="button" value="" onclick="cad(0.01029)" id="cad">Canadian Dollar</button>
+        <button type="button" value="" id="inr" onclick="inr(0.55371)">Indian Rupee</button>
+        <br/>
+        <p>Output:</p>
+        <input type="text" id="output"/>
+        </fieldset>
+        
+
+
+    <hr>
+    <div class="lower_footer">
+        Created By &COPY;
+        <a href="https://www.linkedin.com/in/waqar-uddin-9252a365/">Waqar Uddin</a>.
+    </div>
+</body>
+
+</html>
